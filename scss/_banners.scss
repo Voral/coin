@@ -1,0 +1,75 @@
+.banner-hor {
+	clear: both;
+	background-color: $c-gray-light;
+	padding: 10px;
+
+	@include MQ(XS) {
+		padding: 0;
+	}
+
+	a {
+		max-width: 728px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	img {
+		width: 100%;
+		vertical-align: bottom;
+	}
+}
+
+.banner-vert {
+	clear: both;
+	background-color: $c-gray-light;
+	padding: 15px;
+
+	a {
+		max-width: 240px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	img {
+		width: 100%;
+		vertical-align: bottom;
+	}
+}
+
+.banner-double {
+
+	&__border {
+		background-color: $c-gray-light;
+		padding: 15px;
+	}
+
+	a {
+		max-width: 240px;
+		display: block;
+		margin: 0 auto;
+
+		&:first-child {margin-bottom: 15px;}
+	}
+
+	img {
+		width: 100%;
+		vertical-align: bottom;
+	}
+}
+
+.category__adv {
+
+	a {
+		max-width: 240px;
+		display: block;
+		margin: 0 auto;
+
+		&:first-child {margin-bottom: 15px;}
+	}
+
+	img {
+		width: 100%;
+		vertical-align: bottom;
+	}
+}
+

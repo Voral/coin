@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="261px" height="70px" viewBox="0 0 261 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>graph</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="coinidol.com" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="index" transform="translate(-1110.000000, -350.000000)">
+            <g id="top_line" transform="translate(230.000000, 220.000000)">
+                <g id="bitcoin-index" transform="translate(877.000000, 80.000000)">
+                    <g id="graph" transform="translate(3.000000, 50.000000)">
+                        <g id="Group" transform="translate(32.635557, 8.000000)" stroke="#F7F7F7">
+                            <path d="M0,31.5 L228.067568,31.5" id="Shape"></path>
+                            <path d="M0,0.5 L228.067568,0.5" id="Shape"></path>
+                            <path d="M0,60.5 L228.067568,60.5" id="Shape"></path>
+                        </g>
+                        <g id="Group" transform="translate(33.000000, 10.000000)">
+                            <g id="Clipped">
+                                <g id="Group" transform="translate(0.944890, 0.000000)">
+                                    <polyline id="Shape" fill-opacity="0.2" fill="#F1C40F" points="0.926623775 0.0438461538 21.2535015 2.13153846 41.5803791 9.21153846 61.9072568 9.39307692 82.2341345 10.3461538 102.561012 11.8438462 122.88789 13.2507692 143.214768 15.6107692 163.541645 20.6484615 183.868523 57.0923077 204.195401 52.7353846 224.522278 52.1453846 224.522278 58 0.926623775 58"></polyline>
+                                    <polyline id="Shape" stroke="#FEC940" stroke-width="2" points="0.926623775 0.0438461538 21.2535015 2.13153846 41.5803791 9.21153846 61.9072568 9.39307692 82.2341345 10.3461538 102.561012 11.8438462 122.88789 13.2507692 143.214768 15.6107692 163.541645 20.6484615 183.868523 57.0923077 204.195401 52.7353846 224.522278 52.1453846"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group" font-size="10" font-family="Roboto-Regular, Roboto" fill="#B3B3B3" font-weight="normal">
+                            <text id="$451">
+                                <tspan x="0" y="68">$451</tspan>
+                            </text>
+                            <text id="$457">
+                                <tspan x="0" y="38.5680769">$457</tspan>
+                            </text>
+                            <text id="$464">
+                                <tspan x="0" y="9">$464</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

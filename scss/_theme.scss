@@ -1,0 +1,385 @@
+// Colors
+
+$c-white:				#fff;
+$c-black:				#000;
+
+$c-orange:			#FEC940;
+$c-blue:				#0988FB;
+$c-red:					#D2527E;
+$c-green:				#6FC7C9;
+$c-gray:				#EAEAEA;
+$c-gray-dark:		#B3B3B3;
+$c-gray-light:	#f7f7f7;
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	@include tr-03;
+	color: $c-blue;
+}
+
+p.quote {
+	padding: 30px;
+	background-color: lighten($c-orange,30%);
+	font-style: italic;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 40px;
+	margin: 0;
+
+	@include MQ(XS) {
+		font-size: 30px;
+	}
+}
+
+h2 {
+	font-size: 32px;
+	line-height: 36px;
+}
+
+.title-line {
+	text-align: center;
+  margin: 40px 0;
+  position: relative;
+}
+
+.title-line:before {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	width: 100%;
+	border-top: 1px solid $c-gray;
+}
+
+.title-line h1 {
+	display: inline-block;
+  background-color: $c-white;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  padding: 0 30px;
+  margin: 0;
+  color: $c-black;
+}
+
+.header {
+	background-color: $c-black;
+}
+
+.header__social-item {
+	&.facebook {background-image: url("../i/ico_facebook.svg")}
+	&.twitter {background-image: url("../i/ico_twitter.svg")}
+	&.googleplus {background-image: url("../i/ico_google.svg")}
+	&.youtube {background-image: url("../i/ico_youtube.svg")}
+	&.rss {background-image: url("../i/ico_rss.svg")}
+	&.mail {background-image: url("../i/ico_mail.svg")}
+}
+
+.nav {
+	background-color: $c-gray;
+
+	.menu-btn {
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	&__li {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	&__a {
+		text-decoration: none;
+		color: $c-black;
+
+		&.active {
+			background-color: $c-white;
+			color: $c-orange;
+		}
+
+		&:hover {
+			background-color: $c-white;
+		}
+	}
+
+	.search-input {
+
+		input {
+			outline:none;
+			background-image: url("../i/ico_search.svg");
+			background-repeat: no-repeat;
+			background-position: 5px;
+			background-size: 30px;
+			background-color: $c-gray;
+			color: rgba($c-black,0);
+			cursor: pointer;
+			@include tr-03;
+
+			&:hover {
+				background-size: 24px;
+				// background-position: 3px 8px;
+				background-color: $c-white;
+				border-radius:20px;
+			}
+
+			&:focus {
+				background-size: 24px;
+				background-color: $c-white;
+				background-position: 5px;
+				color: rgba($c-black,1);
+				border-radius:20px;
+			}
+		}
+	}
+}
+
+.last-news {
+
+	&__top {
+
+		&-info {
+			color: $c-gray-dark;
+
+			a {
+				color: $c-blue;
+				margin-left: 10px;
+				text-transform: uppercase;
+
+				&:hover {
+					color: $c-gray-dark;
+				}
+			}
+		}
+
+		&-title {
+			text-decoration: none;
+			color: $c-black;
+			@include tr-01;
+
+			&:hover {text-decoration: underline;}
+		}
+
+		&-photo:hover {
+			box-shadow: 0 0 0 10px $c-orange;
+		}
+	}
+}
+
+.i-news {
+
+	&__photo:hover {
+		box-shadow: 0 0 0 5px $c-orange;
+	}
+
+	&__info {
+		color: $c-gray-dark;
+
+		a{
+			text-transform: uppercase;
+
+			&:hover {
+				color: $c-gray-dark;
+			}
+		}
+	}
+
+	&__title {
+		text-decoration: none;
+		color: $c-black;
+		display: block;
+		@include tr-01;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.c-green {color: $c-green;}
+.c-red {color: $c-red;}
+
+.short-item__info {
+	color: $c-gray-dark;
+
+	a:hover {color: $c-gray-dark;}
+}
+
+.short-item__title {
+	color: $c-black;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.footer {
+	background-color: $c-gray-light;
+
+	&__logo img {
+    filter: brightness(10%) grayscale(100%);
+    opacity: .5;
+    padding-top: 15px;
+	}
+
+	&__info span {
+		color: $c-gray-dark;
+	}
+
+	&__links a {
+		color: $c-black;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+// Category Page ///////////////////////////////////////
+
+.category__item-photo {
+	background-size: cover;
+	background-position: center;
+
+	&:hover {
+			box-shadow: 0 0 0 5px $c-orange;
+		}
+}
+
+.category__item-info {
+	color: $c-gray-dark;
+
+	a {display: none;}
+	a:hover {color: $c-gray-dark;}
+}
+
+.category__item-title {
+	text-decoration: none;
+	color: $c-black;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.paginator {
+	text-align: center;
+	margin: 40px 0;
+
+	a {
+		display: inline-block;
+		width: 58px;
+		height: 58px;
+		line-height: 60px;
+		background-color: $c-orange;
+		border: 2px solid $c-orange;
+		margin: 3px;
+		color: $c-black;
+		font-size: 18px;
+		font-weight: bold;
+		text-decoration: none;
+
+		&.active {
+			background-color: $c-white;
+			cursor: default;
+
+			&:hover {
+				background-color: $c-white;
+			}
+		}
+
+		&:hover {
+			background-color: darken($c-orange,15%);
+		}
+	}
+}
+
+// News View Page ///////////////////////////////////////
+
+.page-news {
+
+	&__info {
+		color: $c-gray-dark;
+
+		a {margin-left: 15px;}
+	}
+	
+	&__content {
+		ul {
+			list-style-type: disc;
+			margin-left: 50px;
+			line-height: 1.5em;
+		}
+
+		ol {
+			list-style-type: decimal;
+			margin-left: 50px;
+			line-height: 1.5em;
+		}
+
+		table {
+			border-collapse: collapse;
+			font-size: 14px;
+			margin: 20px 0;
+
+			th {
+				font-weight: bold;
+				padding: 10px;
+				border-bottom: 2px solid $c-gray-dark;
+			}
+
+			td {
+				padding: 10px;
+				border-bottom: 1px solid $c-gray;
+			}
+
+			tr {@include tr-01;}
+
+			tr:hover {
+				background-color: $c-gray-light;
+			}
+		}
+	}
+}
+
+.social {
+	background-color: $c-gray-light;
+	background-repeat: no-repeat;
+	@include tr-03;
+
+	&:hover {
+		background-color: $c-gray;
+	}
+
+	a {
+		color: $c-black;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	&.facebook {background-image: url(../i/ico_repost_01.svg);}
+	&.twitter {background-image: url(../i/ico_repost_02.svg);}
+	&.googleplus {background-image: url(../i/ico_repost_03.svg);}
+	&.reddit {background-image: url(../i/ico_repost_04.svg);}
+	&.digg {background-image: url(../i/ico_repost_05.svg);}
+	&.linkedin {background-image: url(../i/ico_repost_06.svg);}
+}
+
+.tags {
+
+	&__item {
+		background-color: $c-orange;
+		color: $c-white;
+		text-decoration: none;
+
+		&:hover {
+			background-color: darken($c-orange, 10%);
+		}
+	}
+}

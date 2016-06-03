@@ -1,0 +1,28 @@
+.header__logo {
+	background-image: url(../i/logo.png);
+	width: 209px;
+	height: 44px;
+}
+
+.logo-full {
+	display: none;
+}
+
+.i-news__item {
+	margin-right: 0;
+}
+
+.header__social-item.facebook {background-image: url(../i/ico_facebook.png);}
+.header__social-item.twitter {background-image: url(../i/ico_twitter.png);}
+.header__social-item.googleplus {background-image: url(../i/ico_google.png);}
+.header__social-item.youtube {background-image: url(../i/ico_youtube.png);}
+.header__social-item.rss {background-image: url(../i/ico_rss.png);}
+.header__social-item.mail {background-image: url(../i/ico_mail.png);}
+
+div.g-news__item {
+	height: 300px;
+}
+
+.footer__logo {
+	display: none;
+}

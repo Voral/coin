@@ -258,6 +258,12 @@ h2 {
 	a {display: none;}
 	a:hover {color: $c-gray-dark;}
 }
+.visible-category {
+	.category__item-info {
+		a {display: inline;
+		}
+	}
+}
 
 .category__item-title {
 	text-decoration: none;

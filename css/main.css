@@ -186,6 +186,9 @@ h2 {
   .category__item-info a:hover {
     color: #B3B3B3; }
 
+.visible-category .category__item-info a {
+  display: inline; }
+
 .category__item-title {
   text-decoration: none;
   color: #000; }

@@ -173,9 +173,24 @@ $susy: (
 		text-align: right;
 	}
 
+	&__authorization {
+		width: 28px;
+		height: 30px;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+
+		&:hover {
+
+			img {
+				opacity: .7;
+			}
+		}
+	}
+
 	.search-input {
 		position: absolute;
-		right: 15px;
+		right: 55px;
 		// top: 8px;
 		top: 0px;
 
@@ -193,31 +208,31 @@ $susy: (
 				max-width:100%;
 
 				@media only screen and (min-width: 375px) {
-					width: 185px;
+					width: 145px;
 				}
 
 				@media only screen and (min-width: 414px) {
-					width: 220px;
+					width: 180px;
 				}
 
 				@media only screen and (min-width: 480px) {
-					width: 285px;
+					width: 245px;
 				}
 
 				@media only screen and (min-width: 768px) {
-					width: 580px;
+					width: 540px;
 				}
 
 				@media only screen and (min-width: 1024px) {
-					width: 930px;
+					width: 890px;
 				}
 
 				@media only screen and (min-width: 1136px) {
-					width: 1050px;
+					width: 1010px;
 				}
 
 				@media only screen and (min-width: 1170px) {
-					width: 1080px;
+					width: 1040px;
 				}
 			}
 		}
@@ -954,4 +969,167 @@ $susy: (
 figure {
 	max-width: 100%;
 	overflow: scroll;
+}
+
+.profile {
+	margin-bottom: 40px;
+
+	&__form {
+		@include MQ(XS) {
+			margin-top: 20px;
+		}
+	}
+	&__row {
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+	&__title {
+		@include span(2 of 5);
+		padding-top: 11px;
+
+	}
+	&__input {
+		@include span(3 of 5 last);
+	}
+
+	&__line {
+		margin: 40px 0 30px 0;
+	}
+
+	&__del {
+		float: right;
+		color: $c-red;
+		margin-top: 21px;
+	}
+
+	&__mat {
+		overflow: hidden;
+		clear: both;
+
+		table {
+			font-size: 18px;
+
+			th, td {
+				padding: 20px;
+			}
+
+			th a img {
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				text-align: center;
+			}
+
+			th {
+				a {color: $c-gray-dark;}
+				border-bottom: 1px solid $c-gray;
+				text-align: left;
+			}
+
+			td {
+				color: $c-gray-dark;
+				line-height: 1.3em;
+				vertical-align: middle;
+				border-bottom: 1px solid $c-gray;
+			}
+		}
+
+		&-title {
+			font-size: 24px;
+			font-weight: bold;
+			text-decoration: none;
+			color: $c-black;
+		}
+
+		&-views {
+			font-size: 14px;
+		}
+
+		&-number {
+			font-size: 36px;
+			display: block;
+			white-space: nowrap;
+			margin-top: 10px;
+		}
+
+		&-ts td {
+		padding: 1px !important;
+		border-bottom: none !important;
+		}
+
+		&-social {
+			display: block;
+			min-width: 50px;
+			height: 30px;
+			background-color: $c-gray-light;
+			background-size: 20px 20px;
+			background-position: center 10px;
+			background-repeat: no-repeat;
+			padding-top: 40px;
+			font-size: 12px;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center;
+			color: $c-black;
+
+			&:hover {
+				background-color: $c-gray;
+			}
+
+			&.facebook {background-image: url(../i/ico_repost_01.svg);}
+			&.twitter {background-image: url(../i/ico_repost_02.svg);}
+			&.googleplus {background-image: url(../i/ico_repost_03.svg);}
+			&.reddit {background-image: url(../i/ico_repost_04.svg);}
+			&.digg {background-image: url(../i/ico_repost_05.svg);}
+			&.linkedin {background-image: url(../i/ico_repost_06.svg);}
+		}
+	}
+}
+
+.auth {
+	margin: 40px 0;
+	min-height: 330px;
+
+	p {
+		line-height: 1.5em;
+	}
+
+	@include MQ(XS) {
+		min-height: 100px;
+	}
+
+	&__form {
+		@include span(6);
+		@include push(3);
+
+		@include MQ(XS) {
+			@include span(12);
+			@include push(0);
+		}
+	}
+
+	&__row {
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+
+	&__title {
+		@include span(2 of 6);
+		margin-top: 11px;
+	}
+
+	&__input {
+		@include span(4 of 6 last);
+	}
+
+	&__social {
+		width: 60px;
+		display: inline-block;
+		margin-right: 16px;
+		fill: $c-gray-dark;
+
+		&:hover {
+			fill: $c-orange;
+		}
+	}
 }

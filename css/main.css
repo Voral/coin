@@ -5,6 +5,8 @@ body {
 a {
   transition: all 0.3s ease;
   color: #0988FB; }
+  a:hover {
+    text-decoration: none; }
 
 p.quote {
   padding: 30px;
@@ -23,6 +25,32 @@ h1 {
 h2 {
   font-size: 32px;
   line-height: 36px; }
+
+.green {
+  color: #6FC7C9; }
+
+.input {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  .input:focus {
+    outline: 2px solid #FEC940; }
+
+.btn {
+  font-size: 18px;
+  padding: 20px 30px;
+  background-color: #FEC940;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  margin-right: 30px; }
+  .btn:hover {
+    background-color: #febb0d; }
 
 .title-line {
   text-align: center;
@@ -279,6 +307,52 @@ h2 {
   .tags__item:hover {
     background-color: #febb0d; }
 
+.profile__line {
+  height: 1px;
+  background-color: #EAEAEA; }
+
+.label--checkbox {
+  position: relative;
+  margin: .5rem;
+  font-family: Arial, sans-serif;
+  line-height: 135%;
+  cursor: pointer; }
+
+.checkbox {
+  position: relative;
+  top: -0.375rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer; }
+
+.checkbox:before {
+  transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #f2f2f2; }
+
+.checkbox:checked:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  height: .5rem;
+  border-color: #009688;
+  border-top-style: none;
+  border-right-style: none; }
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  top: -0.125rem;
+  left: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #fff;
+  cursor: pointer; }
+
 .banner-hor {
   clear: both;
   background-color: #f7f7f7;
@@ -471,9 +545,17 @@ h2 {
     margin-right: 0;
     margin-top: 15px;
     text-align: right; }
+  .nav__authorization {
+    width: 28px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+    .nav__authorization:hover img {
+      opacity: .7; }
   .nav .search-input {
     position: absolute;
-    right: 15px;
+    right: 55px;
     top: 0px; }
     .nav .search-input input {
       width: 20px;
@@ -487,25 +569,25 @@ h2 {
         max-width: 100%; }
         @media only screen and (min-width: 375px) {
           .nav .search-input input:focus {
-            width: 185px; } }
+            width: 145px; } }
         @media only screen and (min-width: 414px) {
           .nav .search-input input:focus {
-            width: 220px; } }
+            width: 180px; } }
         @media only screen and (min-width: 480px) {
           .nav .search-input input:focus {
-            width: 285px; } }
+            width: 245px; } }
         @media only screen and (min-width: 768px) {
           .nav .search-input input:focus {
-            width: 580px; } }
+            width: 540px; } }
         @media only screen and (min-width: 1024px) {
           .nav .search-input input:focus {
-            width: 930px; } }
+            width: 890px; } }
         @media only screen and (min-width: 1136px) {
           .nav .search-input input:focus {
-            width: 1050px; } }
+            width: 1010px; } }
         @media only screen and (min-width: 1170px) {
           .nav .search-input input:focus {
-            width: 1080px; } }
+            width: 1040px; } }
 
 .last-news__left {
   width: 74.57627%;
@@ -1297,6 +1379,135 @@ h2 {
 figure {
   max-width: 100%;
   overflow: scroll; }
+
+.profile {
+  margin-bottom: 40px; }
+  @media only screen and (max-width: 480px) {
+    .profile__form {
+      margin-top: 20px; } }
+  .profile__row {
+    margin-bottom: 20px;
+    overflow: hidden; }
+  .profile__title {
+    width: 37.5%;
+    float: left;
+    margin-right: 4.16667%;
+    padding-top: 11px; }
+  .profile__input {
+    width: 58.33333%;
+    float: right;
+    margin-right: 0; }
+  .profile__line {
+    margin: 40px 0 30px 0; }
+  .profile__del {
+    float: right;
+    color: #D2527E;
+    margin-top: 21px; }
+  .profile__mat {
+    overflow: hidden;
+    clear: both; }
+    .profile__mat table {
+      font-size: 18px; }
+      .profile__mat table th, .profile__mat table td {
+        padding: 20px; }
+      .profile__mat table th a img {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center; }
+      .profile__mat table th {
+        border-bottom: 1px solid #EAEAEA;
+        text-align: left; }
+        .profile__mat table th a {
+          color: #B3B3B3; }
+      .profile__mat table td {
+        color: #B3B3B3;
+        line-height: 1.3em;
+        vertical-align: middle;
+        border-bottom: 1px solid #EAEAEA; }
+    .profile__mat-title {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000; }
+    .profile__mat-views {
+      font-size: 14px; }
+    .profile__mat-number {
+      font-size: 36px;
+      display: block;
+      white-space: nowrap;
+      margin-top: 10px; }
+    .profile__mat-ts td {
+      padding: 1px !important;
+      border-bottom: none !important; }
+    .profile__mat-social {
+      display: block;
+      min-width: 50px;
+      height: 30px;
+      background-color: #f7f7f7;
+      background-size: 20px 20px;
+      background-position: center 10px;
+      background-repeat: no-repeat;
+      padding-top: 40px;
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      color: #000; }
+      .profile__mat-social:hover {
+        background-color: #EAEAEA; }
+      .profile__mat-social.facebook {
+        background-image: url(../i/ico_repost_01.svg); }
+      .profile__mat-social.twitter {
+        background-image: url(../i/ico_repost_02.svg); }
+      .profile__mat-social.googleplus {
+        background-image: url(../i/ico_repost_03.svg); }
+      .profile__mat-social.reddit {
+        background-image: url(../i/ico_repost_04.svg); }
+      .profile__mat-social.digg {
+        background-image: url(../i/ico_repost_05.svg); }
+      .profile__mat-social.linkedin {
+        background-image: url(../i/ico_repost_06.svg); }
+
+.auth {
+  margin: 40px 0;
+  min-height: 330px; }
+  .auth p {
+    line-height: 1.5em; }
+  @media only screen and (max-width: 480px) {
+    .auth {
+      min-height: 100px; } }
+  .auth__form {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 25.42373%; }
+    @media only screen and (max-width: 480px) {
+      .auth__form {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-left: 0%; } }
+  .auth__row {
+    margin-bottom: 20px;
+    overflow: hidden; }
+  .auth__title {
+    width: 31.03448%;
+    float: left;
+    margin-right: 3.44828%;
+    margin-top: 11px; }
+  .auth__input {
+    width: 65.51724%;
+    float: right;
+    margin-right: 0; }
+  .auth__social {
+    width: 60px;
+    display: inline-block;
+    margin-right: 16px;
+    fill: #B3B3B3; }
+    .auth__social:hover {
+      fill: #FEC940; }
 
 /*! Pushy - v1.0.0 - 2016-3-1
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.

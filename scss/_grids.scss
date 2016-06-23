@@ -89,8 +89,8 @@ $susy: (
 		max-width: 728px;
 		@include span(8);
 
-		@include MQ(M) {
-			@include span(8);
+		@include MQ(L) {
+			@include span(7);
 		}
 
 		@include MQ(S) {
@@ -156,10 +156,17 @@ $susy: (
 		padding: 0 10px;
 		display: block;
 		line-height: 60px;
+		white-space: nowrap;
+		word-wrap: normal;
 
 		@include MQ(M) {
 			padding: 0 7px;
 			font-size: 14px;
+		}
+
+		@media only screen and (max-width: 890px) {
+			font-size: 13px;
+			padding: 0 5px;
 		}
 
 		@include MQ(S) {

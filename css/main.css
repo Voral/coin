@@ -476,9 +476,9 @@ h2 {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1170px) {
       .header__banner {
-        width: 66.10169%;
+        width: 57.62712%;
         float: left;
         margin-right: 1.69492%; } }
     @media only screen and (max-width: 768px) {
@@ -531,11 +531,17 @@ h2 {
   .nav__a {
     padding: 0 10px;
     display: block;
-    line-height: 60px; }
+    line-height: 60px;
+    white-space: nowrap;
+    word-wrap: normal; }
     @media only screen and (max-width: 1024px) {
       .nav__a {
         padding: 0 7px;
         font-size: 14px; } }
+    @media only screen and (max-width: 890px) {
+      .nav__a {
+        font-size: 13px;
+        padding: 0 5px; } }
     @media only screen and (max-width: 768px) {
       .nav__a {
         display: none; } }
